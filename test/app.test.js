@@ -66,12 +66,15 @@ test("GET /eventos ordena os eventos por data crescente", async () => {
     "Festival cultural",
     "Feira de profissões",
     "Reunião de integração",
-    "Exposição de projetos"
+    "Exposição de projetos",
   ];
   const posicoes = ordemEsperada.map((titulo) => resposta.text.indexOf(titulo));
 
   assert.ok(posicoes.every((posicao) => posicao > -1));
-  assert.deepEqual(posicoes, [...posicoes].sort((a, b) => a - b));
+  assert.deepEqual(
+    posicoes,
+    [...posicoes].sort((a, b) => a - b),
+  );
 });
 
 test("GET /eventos gera um link de detalhes para cada evento", async () => {
@@ -158,4 +161,14 @@ test("arquivos estáticos (CSS e imagem) são disponibilizados", async () => {
   assert.equal(css.status, 200);
   assert.match(css.headers["content-type"], /text\/css/);
   assert.equal(imagem.status, 200);
+});
+
+test("GET /sobre apresenta as informações do projeto e os integrantes", async () => {
+  const resposta = await request(app).get("/sobre");
+
+  assert.equal(resposta.status, 200);
+  assert.match(resposta.text, /Sobre o projeto/);
+  assert.match(resposta.text, /Mateus Luis Nogueira de Lima/);
+  assert.match(resposta.text, /Israelly Lorrany Nogueira de Almeida/);
+  assert.match(resposta.text, /3ª etapa/);
 });

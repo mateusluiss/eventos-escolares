@@ -1,0 +1,36 @@
+<section class="sobre" aria-labelledby="titulo-sobre">
+  <p class="rotulo">Programação para Internet &middot; 3ª etapa</p>
+  <h1 id="titulo-sobre">{{titulo}}</h1>
+  <p>
+    O Eventos Escolares é uma agenda de eventos acadêmicos, científicos e
+    culturais da instituição. A aplicação reúne mostras, feiras, palestras e
+    apresentações em um só lugar, organizados por data, para que estudantes,
+    professores e famílias consultem cada evento com seus detalhes.
+  </p>
+
+  <div class="sobre__blocos">
+    <article class="sobre__bloco">
+      <h2>Integrantes</h2>
+      {{#if integrantes.length}}
+        <ul>
+          {{#each integrantes}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </article>
+
+    <article class="sobre__bloco">
+      <h2>Trabalho</h2>
+      <p>Trabalho do professor de PPI &mdash; 3ª etapa.</p>
+      <p>Grupo 04 &middot; Programação para Internet.</p>
+    </article>
+
+    <article class="sobre__bloco">
+      <h2>Tecnologias</h2>
+      <p>Node.js, Express, Handlebars, Sequelize e SQLite.</p>
+    </article>
+  </div>
+
+  <a class="botao" href="/eventos">Acessar listagem de eventos</a>
+</section>
