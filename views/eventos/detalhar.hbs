@@ -1,32 +1,47 @@
 <nav class="trilha" aria-label="Trilha de navegação">
-    <a href="/">Início</a> / <a href="/eventos">Eventos</a> / <span>{{evento.titulo}}</span>
+  <ol>
+    <li><a href="/">Início</a></li>
+    <li><a href="/eventos">Eventos</a></li>
+    <li aria-current="page">{{evento.titulo}}</li>
+  </ol>
 </nav>
 
-<section class="detalhe">
-    <article class="detalhe-painel">
-        <h1>{{evento.titulo}}</h1>
-        <dl class="detalhe-campos">
-            <dt>Título</dt>
-            <dd>{{evento.titulo}}</dd>
+<div class="detalhe">
+  <article class="detalhe__painel">
+    <h1>{{evento.titulo}}</h1>
 
-            <dt>Data</dt>
-            <dd><time datetime="{{evento.data}}">{{formatarData evento.data}}</time></dd>
+    <dl class="detalhe__campos">
+      <div class="campo">
+        <dt>Título</dt>
+        <dd>{{evento.titulo}}</dd>
+      </div>
+      <div class="campo">
+        <dt>Data</dt>
+        <dd><time datetime="{{evento.data}}">{{formatarData evento.data}}</time></dd>
+      </div>
+      <div class="campo">
+        <dt>Horário</dt>
+        <dd>{{evento.horario}}</dd>
+      </div>
+      <div class="campo">
+        <dt>Local</dt>
+        <dd>{{evento.local}}</dd>
+      </div>
+      <div class="campo">
+        <dt>Descrição</dt>
+        <dd>{{evento.descricao}}</dd>
+      </div>
+    </dl>
+  </article>
 
-            <dt>Horário</dt>
-            <dd>{{evento.horario}}</dd>
-
-            <dt>Local</dt>
-            <dd>{{evento.local}}</dd>
-
-            <dt>Descrição</dt>
-            <dd>{{evento.descricao}}</dd>
-        </dl>
-    </article>
-
-    <aside class="detalhe-lateral">
-        <h2>Data do evento</h2>
-        <p class="data-destaque">{{dataAbreviada evento.data}}</p>
-        <p>{{formatarData evento.data}}, {{evento.horario}}</p>
-        <a class="botao-secundario" href="/eventos">Voltar para a lista</a>
-    </aside>
-</section>
+  <aside class="detalhe__lateral" aria-labelledby="titulo-lateral">
+    <div class="destaque-data">
+      <h2 id="titulo-lateral">Data do evento</h2>
+      <p class="selo-data">
+        <time datetime="{{evento.data}}">{{dataAbreviada evento.data}}</time>
+      </p>
+      <p>Agendado para {{formatarData evento.data}}, das {{evento.horario}}.</p>
+    </div>
+    <a class="botao-secundario" href="/eventos">Voltar para a lista</a>
+  </aside>
+</div>

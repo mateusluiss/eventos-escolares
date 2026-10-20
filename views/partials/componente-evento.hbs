@@ -1,10 +1,14 @@
-<li class="linha-item">
-    <time class="linha-data" datetime="{{data}}">{{dataAbreviada data}}</time>
-    <span class="linha-marcador" aria-hidden="true"></span>
-    <article class="linha-bloco">
-        <h2>{{titulo}}</h2>
-        <p class="linha-info">{{horario}} | {{local}}</p>
-        <p class="linha-resumo">{{descricao}}</p>
-        <a class="botao-secundario" href="/eventos/{{id}}">Detalhes de {{titulo}}</a>
-    </article>
+<li class="linha-tempo__item">
+  <time class="linha-tempo__data" datetime="{{data}}">{{dataAbreviada data}}</time>
+  <span class="linha-tempo__marcador" aria-hidden="true"></span>
+  <article class="evento">
+    <div class="evento__texto">
+      <h2 class="evento__titulo">{{titulo}}</h2>
+      <p class="evento__info">{{horario}} | {{local}}</p>
+      <p class="evento__resumo">{{resumir descricao 90}}</p>
+    </div>
+    <a class="botao-secundario" href="/eventos/{{id}}">
+      Detalhes<span class="visualmente-oculto"> de {{titulo}}</span>
+    </a>
+  </article>
 </li>

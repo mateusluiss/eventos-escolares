@@ -1,9 +1,12 @@
-<section class="erro-pagina">
-    <p class="erro-codigo" aria-hidden="true">404</p>
-    <div class="erro-texto">
-        <h1>Evento não encontrado</h1>
-        <p>O endereço ou identificador informado não corresponde a um evento disponível.</p>
-        <p>Retorne à listagem e escolha outro registro.</p>
-        <a class="botao" href="/eventos">Voltar para a listagem</a>
-    </div>
+<section class="mensagem-erro" aria-labelledby="titulo-erro">
+  <p class="mensagem-erro__codigo">404</p>
+  <div class="mensagem-erro__texto">
+    <h1 id="titulo-erro">{{titulo}}</h1>
+    <p>
+      O endereço ou identificador informado (<code>{{caminho}}</code>) não
+      corresponde a um evento disponível na agenda.
+    </p>
+    <p>Retorne à listagem e escolha outro registro.</p>
+    <a class="botao" href="/eventos">Voltar para a listagem</a>
+  </div>
 </section>

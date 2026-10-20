@@ -1,16 +1,22 @@
-<section class="listagem">
-    <div class="listagem-topo">
-        <h1>Eventos cadastrados</h1>
-        <span class="contador">{{eventos.length}} registros</span>
+<section class="listagem" aria-labelledby="titulo-listagem">
+  <header class="listagem__topo">
+    <div>
+      <h1 id="titulo-listagem">{{titulo}}</h1>
+      <p>Agenda da instituição em ordem cronológica, do evento mais próximo ao mais distante.</p>
     </div>
+    <p class="contador">{{quantidade}} registro(s)</p>
+  </header>
 
-    {{#if eventos.length}}
-        <ol class="linha-tempo">
-            {{#each eventos}}
-                {{> componente-evento}}
-            {{/each}}
-        </ol>
-    {{else}}
-        <p>Nenhum evento foi encontrado.</p>
-    {{/if}}
+  {{#if eventos.length}}
+    <ol class="linha-tempo">
+      {{#each eventos}}
+        {{> componente-evento}}
+      {{/each}}
+    </ol>
+  {{else}}
+    <div class="estado-vazio">
+      <h2>Nenhum evento foi encontrado</h2>
+      <p>A agenda ainda não possui eventos cadastrados.</p>
+    </div>
+  {{/if}}
 </section>
