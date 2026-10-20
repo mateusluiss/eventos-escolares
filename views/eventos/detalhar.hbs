@@ -1,0 +1,32 @@
+<nav class="trilha" aria-label="Trilha de navegação">
+    <a href="/">Início</a> / <a href="/eventos">Eventos</a> / <span>{{evento.titulo}}</span>
+</nav>
+
+<section class="detalhe">
+    <article class="detalhe-painel">
+        <h1>{{evento.titulo}}</h1>
+        <dl class="detalhe-campos">
+            <dt>Título</dt>
+            <dd>{{evento.titulo}}</dd>
+
+            <dt>Data</dt>
+            <dd><time datetime="{{evento.data}}">{{formatarData evento.data}}</time></dd>
+
+            <dt>Horário</dt>
+            <dd>{{evento.horario}}</dd>
+
+            <dt>Local</dt>
+            <dd>{{evento.local}}</dd>
+
+            <dt>Descrição</dt>
+            <dd>{{evento.descricao}}</dd>
+        </dl>
+    </article>
+
+    <aside class="detalhe-lateral">
+        <h2>Data do evento</h2>
+        <p class="data-destaque">{{dataAbreviada evento.data}}</p>
+        <p>{{formatarData evento.data}}, {{evento.horario}}</p>
+        <a class="botao-secundario" href="/eventos">Voltar para a lista</a>
+    </aside>
+</section>

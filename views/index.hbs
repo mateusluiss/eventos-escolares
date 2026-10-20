@@ -1,0 +1,31 @@
+<section class="inicial">
+    <div class="inicial-texto" id="sobre">
+        <h1>Explore eventos escolares</h1>
+        <p>Informações organizadas para a comunidade escolar: mostras, feiras, palestras e
+            apresentações culturais da instituição em uma única agenda.</p>
+        <p>Consulte os registros e veja todos os detalhes de cada evento.</p>
+        <a class="botao" href="/eventos">Acessar listagem de eventos</a>
+    </div>
+
+    <figure class="inicial-visual">
+        <img src="/images/agenda.svg" alt="Ilustração de um calendário com eventos marcados">
+    </figure>
+</section>
+
+<section class="destaques" aria-labelledby="titulo-destaques">
+    <h2 id="titulo-destaques">Destaques do portal</h2>
+
+    {{#if destaques.length}}
+        <div class="destaques-grade">
+            {{#each destaques}}
+                <article class="destaque">
+                    <h3>{{titulo}}</h3>
+                    <p>{{formatarData data}} &middot; {{horario}}</p>
+                    <a class="botao-secundario" href="/eventos/{{id}}">Ver detalhes de {{titulo}}</a>
+                </article>
+            {{/each}}
+        </div>
+    {{else}}
+        <p>Nenhum evento em destaque no momento.</p>
+    {{/if}}
+</section>

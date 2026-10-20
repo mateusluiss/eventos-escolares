@@ -1,0 +1,16 @@
+<section class="listagem">
+    <div class="listagem-topo">
+        <h1>Eventos cadastrados</h1>
+        <span class="contador">{{eventos.length}} registros</span>
+    </div>
+
+    {{#if eventos.length}}
+        <ol class="linha-tempo">
+            {{#each eventos}}
+                {{> componente-evento}}
+            {{/each}}
+        </ol>
+    {{else}}
+        <p>Nenhum evento foi encontrado.</p>
+    {{/if}}
+</section>
