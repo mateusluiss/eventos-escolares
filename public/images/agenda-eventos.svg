@@ -1,41 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" role="img" aria-labelledby="titulo-ilustracao">
-  <title id="titulo-ilustracao">Calendário com datas de eventos marcadas em laranja</title>
-  <rect width="480" height="360" rx="16" fill="#fdf6f2"/>
-  <circle cx="400" cy="70" r="46" fill="#fbe9e1"/>
-  <circle cx="70" cy="300" r="34" fill="#fbe9e1"/>
+  <title id="titulo-ilustracao">Bandeirinhas de festa e dois ingressos de evento sobre fundo azul-marinho</title>
+  <rect width="480" height="360" fill="#17203a"/>
 
-  <!-- Calendário -->
-  <g transform="translate(90 58)">
-    <rect x="6" y="10" width="300" height="250" rx="14" fill="#e3d6cf"/>
-    <rect width="300" height="250" rx="14" fill="#ffffff" stroke="#d5d9df" stroke-width="2"/>
-    <path d="M14 0h272a14 14 0 0 1 14 14v40H0V14A14 14 0 0 1 14 0z" fill="#b5400f"/>
-    <rect x="62" y="-14" width="12" height="32" rx="6" fill="#9c3510"/>
-    <rect x="226" y="-14" width="12" height="32" rx="6" fill="#9c3510"/>
-    <text x="150" y="35" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">OUTUBRO</text>
+  <!-- Holofote -->
+  <path d="M240 -10 L420 360 H60 Z" fill="#ffffff" opacity="0.05"/>
 
-    <g font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#545b64" text-anchor="middle">
-      <text x="30" y="82">D</text><text x="70" y="82">S</text><text x="110" y="82">T</text><text x="150" y="82">Q</text><text x="190" y="82">Q</text><text x="230" y="82">S</text><text x="270" y="82">S</text>
-    </g>
-
-    <g fill="#eef1f5">
-      <rect x="14" y="96" width="32" height="26" rx="5"/><rect x="54" y="96" width="32" height="26" rx="5"/><rect x="94" y="96" width="32" height="26" rx="5"/><rect x="134" y="96" width="32" height="26" rx="5"/><rect x="174" y="96" width="32" height="26" rx="5"/><rect x="214" y="96" width="32" height="26" rx="5"/><rect x="254" y="96" width="32" height="26" rx="5"/>
-      <rect x="14" y="132" width="32" height="26" rx="5"/><rect x="54" y="132" width="32" height="26" rx="5"/><rect x="94" y="132" width="32" height="26" rx="5"/><rect x="134" y="132" width="32" height="26" rx="5"/><rect x="174" y="132" width="32" height="26" rx="5"/><rect x="214" y="132" width="32" height="26" rx="5"/><rect x="254" y="132" width="32" height="26" rx="5"/>
-      <rect x="14" y="168" width="32" height="26" rx="5"/><rect x="54" y="168" width="32" height="26" rx="5"/><rect x="94" y="168" width="32" height="26" rx="5"/><rect x="134" y="168" width="32" height="26" rx="5"/><rect x="174" y="168" width="32" height="26" rx="5"/><rect x="214" y="168" width="32" height="26" rx="5"/><rect x="254" y="168" width="32" height="26" rx="5"/>
-      <rect x="14" y="204" width="32" height="26" rx="5"/><rect x="54" y="204" width="32" height="26" rx="5"/><rect x="94" y="204" width="32" height="26" rx="5"/><rect x="134" y="204" width="32" height="26" rx="5"/><rect x="174" y="204" width="32" height="26" rx="5"/><rect x="214" y="204" width="32" height="26" rx="5"/><rect x="254" y="204" width="32" height="26" rx="5"/>
-    </g>
-
-    <!-- Dias com eventos -->
-    <rect x="54" y="168" width="32" height="26" rx="5" fill="#b5400f"/>
-    <rect x="174" y="168" width="32" height="26" rx="5" fill="#b5400f"/>
-    <rect x="14" y="204" width="32" height="26" rx="5" fill="#b5400f"/>
-    <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
-      <text x="70" y="186">12</text><text x="190" y="186">15</text><text x="30" y="222">18</text>
-    </g>
+  <!-- Bandeirinhas -->
+  <path d="M-10 26 Q 240 96 490 26" fill="none" stroke="#e9edf7" stroke-width="2.5"/>
+  <g stroke="#17203a" stroke-width="2" stroke-linejoin="round">
+    <path d="M30 40 l26 6 -14 30z" fill="#c2380a"/>
+    <path d="M86 56 l26 6 -14 30z" fill="#ffc93c"/>
+    <path d="M142 68 l26 5 -14 30z" fill="#ffffff"/>
+    <path d="M198 76 l26 3 -14 30z" fill="#c2380a"/>
+    <path d="M254 78 l26 0 -12 30z" fill="#ffc93c"/>
+    <path d="M310 74 l26 -3 -10 30z" fill="#ffffff"/>
+    <path d="M366 66 l26 -5 -8 30z" fill="#c2380a"/>
+    <path d="M420 54 l26 -6 -6 30z" fill="#ffc93c"/>
   </g>
 
-  <!-- Selo de evento -->
-  <g transform="translate(340 220)">
-    <circle r="42" fill="#ffffff" stroke="#b5400f" stroke-width="4"/>
-    <path d="M0 -22l6.5 13.2 14.5 2.1-10.5 10.2 2.5 14.5L0 11.2l-13 6.8 2.5-14.5L-21 -6.7l14.5-2.1z" fill="#b5400f"/>
+  <!-- Ingresso de trás -->
+  <g transform="translate(250 228) rotate(9)">
+    <rect x="-112" y="-60" width="224" height="120" rx="12" fill="#ffc93c" stroke="#0e1428" stroke-width="3"/>
+    <circle cx="-112" cy="0" r="14" fill="#17203a"/>
+    <circle cx="112" cy="0" r="14" fill="#17203a"/>
+    <path d="M-72 -46v92" stroke="#0e1428" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+    <rect x="-44" y="-28" width="108" height="10" rx="5" fill="#0e1428" opacity="0.85"/>
+    <rect x="-44" y="-6" width="76" height="10" rx="5" fill="#0e1428" opacity="0.55"/>
+    <rect x="-44" y="16" width="92" height="10" rx="5" fill="#0e1428" opacity="0.55"/>
+  </g>
+
+  <!-- Ingresso da frente -->
+  <g transform="translate(222 208) rotate(-7)">
+    <rect x="-128" y="-72" width="256" height="144" rx="14" fill="#ffffff" stroke="#0e1428" stroke-width="3.5"/>
+    <path d="M-114 -72h138v144h-138a14 14 0 0 1 -14 -14v-116a14 14 0 0 1 14 -14z" fill="#c2380a" stroke="#0e1428" stroke-width="3.5" stroke-linejoin="round"/>
+    <circle cx="-128" cy="0" r="16" fill="#17203a"/>
+    <circle cx="128" cy="0" r="16" fill="#17203a"/>
+    <path d="M24 -58v116" stroke="#0e1428" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+    <text x="-52" y="-6" text-anchor="middle" font-family="Rockwell, 'Roboto Slab', Georgia, serif" font-size="52" font-weight="800" fill="#ffffff">12</text>
+    <text x="-52" y="30" text-anchor="middle" font-family="Rockwell, 'Roboto Slab', Georgia, serif" font-size="24" font-weight="800" fill="#ffc93c">OUT</text>
+    <text x="38" y="-36" font-family="Rockwell, 'Roboto Slab', Georgia, serif" font-size="13" font-weight="800" fill="#17203a">Entrada livre</text>
+    <rect x="38" y="-20" width="58" height="8" rx="4" fill="#17203a" opacity="0.5"/>
+    <rect x="38" y="-4" width="44" height="8" rx="4" fill="#17203a" opacity="0.3"/>
+    <path d="M62 30l5 10.2 11.2 1.6-8.1 7.9 1.9 11.2-10-5.3-10 5.3 1.9-11.2-8.1-7.9 11.2-1.6z" fill="#c2380a" transform="translate(0 -6) scale(.9)"/>
+  </g>
+
+  <!-- Confete -->
+  <g>
+    <circle cx="48" cy="150" r="6" fill="#ffc93c"/>
+    <circle cx="86" cy="206" r="4" fill="#ffffff" opacity="0.8"/>
+    <rect x="410" y="132" width="12" height="12" rx="3" fill="#c2380a" transform="rotate(20 416 138)"/>
+    <circle cx="438" cy="210" r="5" fill="#ffffff" opacity="0.8"/>
+    <rect x="52" y="292" width="10" height="10" rx="2" fill="#c2380a" transform="rotate(-15 57 297)"/>
+    <circle cx="430" cy="300" r="6" fill="#ffc93c"/>
   </g>
 </svg>
